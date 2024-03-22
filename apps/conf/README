@@ -1,0 +1,13 @@
+This folder should contain the configuration for a specific country like oml_prod.conf and global_kpis.conf (it can be different for different countries).
+This folder should contain the configuration files for only one country for security reasons.
+
+
+CREATE TABLE `kpis` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `jour` date DEFAULT NULL,
+  `cle` varchar(20) DEFAULT NULL,
+  `valeur` float DEFAULT NULL,
+  `unit` varchar(20) DEFAULT NULL,
+  `extras` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
